@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+    <title>Conocer</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="images/heart-cursor.png" alt="heart"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./la-fiesta.html">La Fiesta</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./llegar.html">Llegar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./hospedarse.html">Hospedarse</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./turistear.html">Conocer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./comer-beber.html">Comer y beber</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Se suman?</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <section class="intro">
+        <h2 class="fw-bold mt-3">Conocer</h2>
+        <p>Nuestra boda es también una excusa para hacerse un viajecito, y lo sabemos. Por lo tanto, acá dejamos recomendaciones para aprovechar los días previos o posteriores al gran evento.</p>
+        <p>La forma más práctica de moverse dentro del centro de Salta es a pie, y para el resto en auto, ya sea alquilado o que viajen en vehículo propio.</p>
+	</section>
+
+    <section class="intro container">
+		<div class="row m-4">
+			<div class="col">
+				<button class="mx-4 btn btn-outline turismo-buttons" id="salta-centro">Salta Centro</button>
+				<button class="mx-4 btn btn-outline turismo-buttons" id="salta-alrededores">Salta Alrededores</button>
+				<button class="mx-4 btn btn-outline turismo-buttons" id="quebrada-conchas">Quebrada de Las Conchas</button>
+				<button class="mx-4 btn btn-outline turismo-buttons" id="quebrada-humahuaca">Quebrada de Humahuaca</button>
+				<button class="mx-4 btn btn-outline turismo-buttons" id="cafayate">Cafayate</button>
+				<button class="mx-4 btn btn-outline turismo-buttons" id="cachi">Cachi y Valles Calchaquíes</button>
+			</div>
+		
+		</div>
+        
+    </section>
+
+    <section class="intro square mb-3">
+        <article id="zone-description">
+            <h3 class="fw-bold">Centro de Salta</h3>
+            <p>La ciudad de Salta tiene muchos lugares interesantes para visitar y pasear. Al navegar por el mapa se puede descubrir qué hacer en esta zona. Si es la primera vez en la zona, recomendamos tomarse entre 1 y 2 días para aprovechar al máximo. Si no les copan los museos, con 1 día te sobra.</p>
+            <p>Recomendamos en particular el Museo de Arqueología de Alta Montaña, donde se exhiben las momias del Llullaillaco.</p>
+        </article>
+        <div id="map-turismo"></div>
+    </section>
+    <section class="intro">
+		<a href="/comer-beber.html"><button class="btn btn-outline m-4">Comer y beber</button></a>
+	</section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+    <script type="module" src="./map-turismo.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

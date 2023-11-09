@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+body {
+	cursor: url('/images/heart.png'), auto;
+    background-color: #ffffff;
+	color: #444444;
+	font-family: 'Bodoni Moda', serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+    cursor: url('/images/heart-cursor.png'), auto;
+}
+
+.header {
+	background-color: white;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	font-size: 4rem;
+	margin: 0;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #444444;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+.intro {
+    margin-top: 30px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	width: 80vw;
+	display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto
+}
+
+#party {
+	text-align: left;
+}
+
+.btn {
+	border-bottom: solid black 5px;
+	color: black;
+	cursor: pointer;
+	font-size: 1.25rem;
+	padding: 10px 20px;
+	text-align: center;
+	margin-bottom: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color 0.6s ease;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.btn:hover {
+	background-color: #000000;
+    color: white;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner img {
+    width: 50vw;
+    border-radius: 30px;
+    margin: 30px;
+}
+
+.banner h2 {
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 0;
+	color: white;
+	text-shadow: 2px 2px 1px #444444;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #444444;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #444444;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #222;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.countdown {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	font-size: 45px;
+}
+
+.food-list{
+	padding: 20px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.square {
+	padding: 20px;
+	/* border: #444444 solid; */
+	border-radius: 10px;
+}
+
+.road-desc {
+	text-align: justify;
+	font-size: 1.4rem;
+}
+
+#map{
+	margin: auto;
+	height: 500px;
+	width: 90%;
+	border: solid 1px;
+	border-radius: 10px;
+}
+
+#map-comer-beber {
+	margin: auto;
+	height: 500px;
+	width: 90%;
+	border: solid 1px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+#map-turismo {
+	margin: auto;
+	height: 500px;
+	width: 90%;
+	border: solid 1px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.map-hotels {
+	border: solid 1px;
+	border-radius: 10px;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+.carousel-container {
+	padding-left: 25vw;
+	padding-right: 25vw;
+}
+
+.carousel-item img {
+	border-radius: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+	#turist {
+	  flex-direction: column !important;
+	}
+  }
+
+/* Responsive styles using Bootstrap

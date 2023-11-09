@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+    <title>Como llegar</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="images/heart-cursor.png" alt="heart"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="./la-fiesta.html">La Fiesta</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./llegar.html">Llegar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./hospedarse.html">Hospedarse</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./conocer.html">Conocer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./comer-beber.html">Comer y beber</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Se suman?</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="intro">
+			<h2 class="fw-bold mt-3">Como llegar?</h2>
+			<p>Hemos tomado la maravillosa decisión de contraer matrimonio en la Finca Los Maitines, un increíble sitio, ideal para captar fotos <i>instagrameables</i>. Envidia garantizada. Vayan <i>tuneados</i>, que los años pasan pero las fotos quedan y Chanti, como ya saben, es una <i>influencer</i> que no tiene mucho filtro. Nico también, pero no lo sabe porque no usa redes populares, solo aparece sin enterarse.</p>
+			<p>El lugar está ubicado en San Lorenzo, a escasos minutos de la ciudad de Salta. Para quienes nunca hayan ido antes y sean oriundos de la ciudad de Rosario, es como ir desde el centro a la zona de Alberdi, unos veinte minutos.</p>
+			<p>Ahora bien, dependiendo del lugar en el que inicien el bonito periplo hasta el Norte argentino, puede ser conveniente -o necesario- que viajen en avión, en auto, en colectivo, o quizás en tren, dependiendo de que tan aventureros/as/es y/o carentes de recursos sean.</p>
+			<div id="map"></div>
+	</section>
+    
+	<section class="row m-3">
+		<article class="square mx-3 col">
+			<h2 class="fw-bold mt-3 display-3">En avión:</h2>
+			<p class="road-desc">Si vienen en avión, significa que son ricos/as/ques(?), que conseguieron una promo, o que son unos/as/es dispendiosos/as/es irresponsables, como nosotris. En este caso, lo más probable es que arriben al Aeropuerto Internacional de Salta, llamado Gral. Martín Miguel de Güemes.</p>
+			<h3 class="fw-bold mt-3">Desde CABA</h3>
+			<p class="road-desc">Desde la Ciudad Autónoma de Buenos Aires hay muchos vuelos diarios directos (típico), que parten desde el Aeroparque y desde Ezeiza. El viaje dura 2 horas y 10 minutos.</p>
+			<h3 class="fw-bold mt-3">Desde Rosario</h3>
+			<p class="road-desc">Los vuelos directos desde Rosario son gestionados por Aerolíneas Argentinas y parten los días Martes y Jueves a las 09:15 Hs., con una duración de 1 hora y 45 minutos.</p>
+			<p class="road-desc">En caso de que se agoten los vuelos directos, también existe la posibilidad de partir desde Rosario y hacer escala en Aeroparque.</p>
+			<h3 class="fw-bold mt-3">Desde el exterior</h3>
+			<p class="road-desc">Si llegan desde el exterior, tienen que hacer escala en el Aeropuerto Internacional de Ezeiza o en otro aeropuerto argentino para poder arribar a Salta. Elijan su propia aventura.</p>
+			<h3 class="fw-bold mt-3">Consulten la disponibilidad de vuelos y precios en:</h3>
+			<a href="https://www.aerolineas.com.ar/vuelos-por-argentina"><p>Página Oficial Aerolineas Argentinas</p></a>
+			<a href="https://jetsmart.com/ar/es/"><p>Página de JetSmart</p></a>
+			<a href="https://jetsmart.com/ar/es/"><p>Página de JetSmart</p></a>
+			<a href="https://flybondi.com/ar"><p>Página de FlyBondi</p></a>
+			<a href="https://almundo.com.ar/vuelos"><p>Almundo.com.ar</p></a>
+		</article>
+		<article class="square col">
+			<h2 class="fw-bold mt-3 display-3">En auto:</h2>
+			<p class="road-desc">Si les gusta manejar, viajar en auto hasta Salta puede resultar muy interesante. A Chanti le aburre esta parte, por lo que será transcripta tal cual como Nico, con gran ilusión, ha redactado de manera entusiasta.</p>
+			<h3 class="fw-bold mt-3">Por RN9 y RN34</h3>
+			<p class="road-desc">Desde Rosario por Autopista hasta la ciudad de Córdoba, luego por RN9 hasta Salta. Camino transitado pero bastante directo.</p>
+			<a href="https://goo.gl/maps/JhVfrS8PdwnXQhGEA" target="_blank"><p>Ver ruta</p></a>
+			<h3 class="fw-bold mt-3">Por RN9, RN60 y RN157</h3>
+			<p class="road-desc">Si les gusta aventurarse un poco, se puede tomar Autopista hasta la ciudad de Córdoba y luego seguir por RN9 hasta la intersección con RN60, antes de llegar a Villa del Totoral. Esta ruta atraviesa el Lago Salinas Grandes en la Pcia. de Catamarca, y un paisaje algo más interesante que el de los trayectos tradicionales.</p>
+			<p class="road-desc">Luego desde la Localidada de Recreo se toma la RN157 hasta San Miguel de Tucumán, y luego se puede continuar viaje hasta la ciudad de Salta por RN9.</p>
+			<p class="road-desc">La distancia total es de 1.256 km y toma casi 15 horas de viaje.</p>
+			<a href="https://goo.gl/maps/i4gR5tMY57e2U31RA" target="_blank"><p>Ver ruta</p></a>
+			<h3 class="fw-bold mt-3">Por RN34</h3>
+			<p class="road-desc">Esta es la forma más corta de llegar por tierra desde la ciudad de Rosario, aunque suele tomar más tiempo y más peligro debido a la numerosa cantidad de camiones circulando (no la recomendamos).</p>
+			<p class="road-desc">La distancia total es de 1.171 km y toma entre 14 y 15 horas de viaje.</p>
+			<a href="https://goo.gl/maps/UNqU2N2HpJJpj31Z6" target="_blank"><p>Ver ruta</p></a>
+			<h3 class="fw-bold mt-3">Turisteando</h3>
+			<p class="road-desc">Si la idea no es llegar lo antes posible sino disfrutar del camino, hagan click en el siguiente link para ver otras opciones:</p>
+			<a href="./conocer.html"><p>Conocer</p></a>
+		</article>
+	</section>
+	<section class="intro">
+		<a href="/hospedarse.html"><button class="btn btn-outline m-4">Hospedarse</button></a>
+	</section>
+	
+		
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+    <script src="./map.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	
+</body>
+</html>

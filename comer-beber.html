@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+   crossorigin=""/>
+    <title>Comer y beber</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="images/heart-cursor.png" alt="heart"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./la-fiesta.html">La Fiesta</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./llegar.html">Llegar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./hospedarse.html">Hospedarse</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./conocer.html">Conocer</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./comer-beber.html">Comer y beber</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./contacto.html">Se suman?</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <section class="intro">
+        <h2 class="fw-bold mt-3">Comer y beber</h2>
+        <p>Llegaron a la parte más importante de esta página web.</p>
+        <p>Ya que una vida sin disfrutar de una buena comida y una buena bebida no merece ser vivida, dejamos algunas recomendaciones para deleitarse durante la estadía.</p>
+    </section>
+	
+    <div id="map-comer-beber"></div>
+	<section class="intro">
+		<a href="/contacto.html"><button class="btn btn-outline m-4">Se suman?</button></a>
+	</section>
+		
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+   crossorigin=""></script>
+    <script src="./map-comer-beber.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
